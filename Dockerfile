@@ -1,4 +1,4 @@
-FROM sonatype/nexus3:3.63.0
+FROM sonatype/nexus3:3.64.0
 USER root
 RUN curl -vL https://github.com/groupe-edf/nexus-report-plugin/releases/download/0.2.1/nexus-report-plugin-0.2.1-bundle.kar -o /opt/sonatype/nexus/deploy/nexus-report-plugin-0.2.1-bundle.kar
 RUN curl -vL https://repo1.maven.org/maven2/org/sonatype/nexus/plugins/nexus-repository-apk/0.0.26/nexus-repository-apk-0.0.26-bundle.kar -o /opt/sonatype/nexus/deploy/nexus-repository-apk-0.0.26-bundle.kar
